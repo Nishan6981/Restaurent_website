@@ -1,0 +1,646 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dongle:wght@300&family=Luxurious+Roman&family=Source+Serif+Pro:ital,wght@0,300;0,400;0,600;1,200;1,400;1,600&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="stylesheet" href="css/material-scrolltop.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/animate.css" type="text/css">
+    <link rel="stylesheet" href="css/slicknav.min.css">
+    <link rel="stylesheet" href="css/responsive.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <title>RESTAURENT WEBSITE</title>
+  </head>
+  <body>
+    <!----HEADER AREA START-------->
+      <section class="header_area">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-2">
+                 <div class="logo">
+                    <img src="img/logo.png" alt="">
+                 </div>
+               </div>
+               <div class="col-md-7">
+                  <div class="menu">
+                    <ul class="hide_menu">
+                       <li><a href="#">Home</a></li>
+                       <li><a href="#">Pages</a></li>
+                       <li><a href="#menuorder_list">Menu</a></li>
+                       <li><a href="#about_area">About Us</a></li>
+                       <li><a href="#contact_area">Contact</a></li>
+                       <li  class="menu_card2"><a href="#" onclick="toggle()">MAKE  ARESERVATION</a></li> <!---ONLY MOBILE -->
+                    </ul>
+                  </div>
+               </div>
+               <div class="col-md-3">
+                  <div class="menu_card">
+                     <a href="#" onclick="toggle()">MAKE  ARESERVATION</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+    <!----HEADER AREA END-------->
+    <!----POPUP AREA START-------->
+      <section id="popup">
+         <div class="popup_header">
+            <div class="row">
+               <div class="col-11 col-md-11"><h2>MAKE A <br> RESERVATION<h2></h2></div>
+               <div class="col-1 col-md-1">
+                  <a href="#" onclick="toggle()" class="btn_cls">X</a>
+               </div>
+            </div>   
+         </div>   
+         <div class="container">
+            <div class="popup_middle mt-3">
+               <form action="#" method="post">
+                  <div class="row">
+                     <div class="col-lg-6">
+                        <!-- <span><i class="fa-solid fa-clock"></i></span> -->
+                        <div class="time">
+                           <select name="time" id="#">
+                              <option>Time</option>
+                              <option>09:00 AM</option>
+                              <option>11:00 AM</option>
+                              <option>12:00 PM</option>
+                              <option>01:00 PM</option>
+                              <option>02:00 PM</option>
+                              <option>03:30 PM</option>
+                              <option>04:00 PM</option>
+                              <option>05:00 PM</option>
+                              <option>07:00 PM</option>
+                              <option>08:00 PM</option>
+                              <option>09:00 PM</option>
+                          </select>
+                        </div>
+                     </div>
+                     <div class="col-lg-6">
+                        <div class="date">
+                           <input type="date" name="date" placeholder="dd/mm/yyyy" />
+                        </div>
+                     </div>
+                     <div class="col-lg-6 mt-3">
+                        <div class="name">
+                           <input type="name" name="name" placeholder="Name">
+                        </div>
+                     </div>
+                     <div class="col-lg-6 mt-3">
+                        <div class="number">
+                           <input type="phone" name="number" placeholder="Number">
+                        </div>
+                     </div>
+                  </div>
+               </form>
+            </div>
+            <div class="form_middle mt-3">                        <!---- FORM MIDDLE START ----------->
+               <form action="#" method="post">
+                  <div class="row">
+                     <div class="col-lg-12 mb-3">
+                        <div class="person">
+                           <select name="person" id="#">
+                              <option>Person</option>
+                              <option>2</option>
+                              <option>3</option>
+                              <option>4</option>
+                              <option>5</option>
+                              <option>6</option>
+                              <option>7</option>
+                              <option>8</option>
+                              <option>9</option>
+                              <option>10</option>
+                              <option>10+</option>
+                           </select>
+                        </div>
+                     </div>
+                     <div class="col-lg-12">
+                        <div class="email mb-3">
+                           <input type="email" name="email" placeholder="Email">
+                        </div>
+                     </div>
+                  </div>
+               </form>
+            </div>
+         </div>
+         <div class="popup_footer">
+            <div class="pop_footer_cont">
+               <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta harum consectetur quisquam reprehenderit sunt magnam repudiandae porro nemo recusandae dolorum et error, incidunt id ducimus dignissimos pariatur quae? Fugiat, accusantium.</p>
+               <!-- <a href="#" onclick="toggle()">Close</a> -->
+               <button>Submit</button>
+            </div>
+         </div>
+      </section>
+    <!----POPUP  AREA END-------->
+    <!----ADVERTIS AREA START --------->
+      <section class="advertis_area" id="blur" >
+         <div class="advertis_contant">
+            <div class="row flex">
+               <div class="col-lg-4 col-md-4">
+                  <div class="bg_img">
+                     <div class="front_img">
+                        <img src="img/plate.png" class="img-fluid animate__animated  animate__backInLeft" alt="">
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-8 col-md-8 mt-5">
+                  <div class="advertis_cont">
+                     <h1 class="animate__animated animate__slideInUp">The Spectacle <span class="font-weight-black"><b> Before Us<br/>Was Indeed</b> </span>Sublime.</h1>
+                     <p class="animate__animated animate__slideInUp">Apparently, we had reached a great height in the atmosphere, for the sky was a dead black, and which lifts the horizon of the sea to the level of the spectator on a hillside.</p>
+                     <div class="advertis_button animate__animated animate__slideInUp">
+                        <button class="cont_btn1">Order Online</button>
+                        <button class="cont_btn2">Our Location</button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+    <!----ADVERTIS AREA END -------->
+    <!---------MENU AREA START ---------->
+      <section class="menu_area">
+        <div class="container">
+           <div class="menu_tittle">
+              <h5>Menu</h5>
+              <h3>Taste Our Foods & Enjoy</h3>
+           </div>
+           <div class="carousel">
+              <div class="menu_img owl-carousel">
+                <div class="img_hover">
+                   <img src="img/antioxidant-beverage-carrot-juice.png" class="img-fluid"  alt="" />
+                   <div class="overlay">
+                      <h4>PUMPKIN SPICE <br> JUICE</h4>
+                      <p>Chilled drink with cinamen</p>
+                   </div>
+                </div>
+                <div class="img_hover">
+                   <img src="img/bowl-calcium-cereal.png" class="img-fluid" alt="" />
+                   <div class="overlay">
+                      <h4>BLUEBERRY MILK <br> SMOOTHIE </h4>
+                      <p>With fresh papermint</p>
+                   </div>
+                </div>
+                <div class="img_hover">
+                   <img src="img/bowl-delicious-dinner.png" class="img-fluid" alt=""/>
+                   <div class="overlay">
+                      <h4>SPICY CHICKEN <br> SPAGHETTI</h4>
+                      <p>Served With Green Chillies</p>
+                   </div>
+                </div>
+                <div class="img_hover">
+                   <img src="img/bread-bun-chopping-board.png" class="img-fluid" alt=""/>
+                   <div class="overlay">
+                      <h4>SMOKED BEEF <br> SUB-SANDWITCH</h4>
+                      <p>Slow Cooked beef sub</p>
+                   </div>
+                </div>
+                <div class="img_hover">
+                   <img src="img/sec.jpg" class="img-fluid" alt=""/>
+                   <div class="overlay">
+                      <h4>COLD MILK SHAKE <br> JUICE </h4>
+                      <p>With fresh milk</p>
+                   </div>
+                </div>
+              </div>
+           </div>
+         </div>
+      </section> 
+    <!--------MENU AREA END -------------->
+    <!-------MENU ORDER LIST AREA START -------------->
+      <section id="menuorder_list">
+         <div class="container">
+            <div class="order_icon">
+               <div class="icon_box1">
+                  <i class="fa-solid fa-mug-saucer"></i>
+                  <p>Breakfast</p>
+               </div>
+               <div class="icon_box1">
+                  <i class="fa-solid fa-utensils"></i>
+                  <p>Lunch</p>
+               </div>
+               <div class="icon_box1">
+                  <i class="fa-solid fa-drumstick-bite"></i>
+                  <p>Dinner</p>
+               </div>
+               <div class="icon_box1">
+                  <i class="fa-solid fa-cake-candles"></i>
+                  <p>Desserts</p>
+               </div>
+               <div class="icon_box1">
+                  <i class="fa-solid fa-champagne-glasses"></i>
+                  <p>Drinks</p>
+               </div>
+            </div>
+            <div class="menu_order">
+               <!-- <div class="row">
+                  <div class="col-md-12"> -->
+                     <div class="egg_img animate__animated animate__fadeInTopRight">
+                        <img src="img/egg.png" alt="" width="200px">
+                     </div>
+                  <!-- </div>
+               </div> -->
+               <div class="order_list">
+                  <div class="order_card1">
+                     <div class="order_box">
+                         <h6>BREAKFAST BOWL</h6>
+                         <a href="#">$8.50</a>
+                         <p>Black Bean Cake, Greems Tomato & Avocado Picp drizzled with lime Cream</p>
+                     </div>
+                     <div class="order_box">
+                        <h6>EGG SANDWICH</h6>
+                        <a href="#">$7.50</a>
+                        <p>Everything Bagel with Cream Cheese, Bacon Tomato, Red Onion Basil Pesto, Arugula</p>
+                    </div>
+                    <div class="order_box">
+                       <h6>BREAKFAST BURUITO</h6>
+                       <a href="#">$9.50</a>
+                       <p>Three Scrambled eggs Cheddar, our Housemade Black Bean Cake, Avocado Pico, & Lime Cream</p>
+                    </div>
+                 </div>
+                 <div class="order_card2">
+                    <div class="order_box">
+                        <h6>VEGGIE JAMMIE</h6>
+                        <a href="#">$5.50</a>
+                        <p>Everything Bagel with our Homemade Tofu Herb Spread, Cucumber Tomato, Red Onion, & Arugula</p>
+                    </div>
+                    <div class="order_box">
+                       <h6>BAGEL WITH CREAM CHEESE</h6>
+                       <a href="#">$6.50</a>
+                       <p>Plain, Cranberry, or Everything</p>
+                    </div>
+                    <div class="order_box">
+                       <h6>BREAKFAST PASTRIES</h6>
+                       <a href="#">$9.00</a>
+                       <p>Three Scrambled eggs Cheddar, our Housemade Black Bean Cake, Avocado Pico, & Lime Cream</p>
+                    </div>
+                    <div class="order_box">
+                       <h6>FRIED EGG</h6>
+                       <a href="#">$9.50</a>
+                       <p>Three Fried Eggs, house hot sauce, local chaddar mac, lettuce, pickle & onion on a sesame roll</p>
+                   </div>
+                 </div>
+                 <div class="order_card3">
+                    <div class="order_box">
+                        <h6>SMOKED SALMON BAGEL</h6>
+                        <a href="#">$9.50</a>
+                        <p>Smoked Salmon, Capers House Pickled Red Onions & Cream Cheese served on a Toasted bagel</p>
+                    </div>
+                    <div class="order_box">
+                       <h6>BREAKFAST JAMMIE</h6>
+                       <a href="#">$6.50</a>
+                       <p>Everything Bagel with Cream Cheese, Bacon Tomato, Red Onion, Basil Pesto, Arugula</p>
+                    </div>
+                    <div class="order_box">
+                       <h6>AVOCADO TOAST</h6>
+                       <a href="#">$7.50</a>
+                       <p>Crushed Avocado topped with MV Sea Salt on Toasted Multigrain</p>
+                    </div>
+                    <div class="order_box">
+                       <h6>AVOCADO TOAST</h6>
+                       <a href="#">$6.50</a>
+                       <p>Crushed Avocado topped with MV Sea Salt on Toasted Multigrain</p>
+                    </div>
+                 </div>
+              </div>
+              <div class="bread_img">
+                 <img src="img/bread.png" alt="" width="400">
+              </div>
+            </div>
+        </div>  
+      </section>
+    <!-------MENU ORDER LIST AREA END -------------->
+    <!---------======== HOME DELIVER AREA START ========----------------->
+      <section class="home_deliver">
+         <div class="container">
+            <div class="home_deliver_contant">
+               <div class="home_deliver_img">
+                  <img src="img/fried-clipart-transparent-background-7.png" width="300px" height="330px" alt="">
+               </div>
+               <div class="home_deliver_cont">
+                  <p>Hungry?</p>
+                  <h4>We Will Home Deliver!</h4>
+                  <button>Make An Order</button>
+               </div>
+            </div>
+         </div>
+      </section>
+    <!---------======== HOME DELIVER AREA END ========----------------->
+    <!------=======EVENTS AREA START=================---------->
+      <section class="events_area">
+         <div class="container">
+            <div class="events_cont">
+               <div class="row text-center">
+                  <div class="col-lg-12">
+                     <h2>We Manage Your Events</h2>
+                  </div>
+                  <div class="col-lg-12 col-md-12">
+                     <p>Allow our Chef to deliver the perfect private dinner or cocktail party experience in your home; or let us simply add a little extra flavor to your next office meeting, boat trip, or beach picnic. By partnering with our sibling location Rosewater Wine & Spirits, we can offer a full array of bar services and beverage selections. Email us to learn more.</p>
+                  </div>
+               </div>
+            </div>
+            <div class="events_card">
+               <div class="events_img">
+                  <img src="img/pancake_PNG94.png"  class="img-fluid" width="300px" alt="">
+               </div>
+               <div class="events_card_cont">
+                  <p>We Cater in Weddings,<br>
+                     Corporate Functions <br>
+                     and Events
+                  </p>
+                  <button>Hire Us Now</button>
+               </div>
+            </div>
+            <div class="events_image">
+               <div class="row">
+                  <div class="col-md-5 mb-3 pe-2">
+                     <div class="events_bigimg">
+                        <img src="img/bigimg.jpg" class="img-fluid" alt="">
+                     </div>
+                  </div>
+                  <div class="col-md-7">
+                     <div class="row">
+                        <div class="col-4 px-2 mb-3">
+                           <img src="img/1.jpg" alt="" class="img-fluid">
+                        </div>
+                        <div class="col-4 px-2 mb-3">
+                           <img src="img/2.jpg" alt="" class="img-fluid">
+                        </div>
+                        <div class="col-4 px-2 mb-3">
+                           <img src="img/3.jpg" alt="" class="img-fluid">
+                        </div>
+                        <div class="col-4 px-2 mb-3">
+                           <img src="img/4.jpg" alt="" class="img-fluid">
+                        </div>
+                        <div class="col-4 px-2 mb-3">
+                           <img src="img/5.jpg" alt="" class="img-fluid">
+                        </div>
+                        <div class="col-4 px-2 mb-3">
+                           <img src="img/6.jpg" alt="" class="img-fluid">
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+    <!------=======EVENTS AREA END=================---------->
+    <!----------=====ABOUT US AREA START==============-------->
+      <section id="about_area">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="about_contant">
+                     <h5>About Us</h5>
+                     <h3>Who Are We?</h3>
+                     <p>We are a chain of theme restaurant founded in 1971 in London. In 1979, the cafe began covering its walls with rock and roll memorabilia, a tradition which expanded to others in the chain.</p>
+                     <button>Learn More</button>
+                  </div>
+               </div>
+            </div>
+            <div class="avatar_box">
+               <div class="row">
+                  <div class="col-6 col-md-4 mt-3">
+                     <img src="img/IMG_9543_photography and edit by Foysal Islam Shuvo 2019.jpg" class="img-fluid" alt="">
+                     <div class="avatar_cont">
+                        <h6>Mubashshir Nishan</h6>
+                        <p>Owner & Founder</p>
+                     </div>
+                  </div>
+                  <div class="col-6 col-md-4 mt-3">
+                     <img src="img/img_avatar.png" class="img-fluid" alt="">
+                     <div class="avatar_cont">
+                        <h6>Mubashshir Nishan</h6>
+                        <p>Owner & Founder</p>
+                     </div>
+                  </div>
+                  <div class="col-6 col-md-4 mt-3">
+                     <img src="img/img_avatar.png" class="img-fluid" alt="">
+                     <div class="avatar_cont">
+                        <h6>Mubashshir Nishan</h6>
+                        <p>Owner & Founder</p>
+                     </div>
+                  </div>
+                  <div class="col-6 col-md-4 mt-3">
+                     <img src="img/img_avatar.png" class="img-fluid" alt="">
+                     <div class="avatar_cont">
+                        <h6>Mubashshir Nishan</h6>
+                        <p>Owner & Founder</p>
+                     </div>
+                  </div>
+                  <div class="col-6 col-md-4 mt-3">
+                     <img src="img/img_avatar.png" class="img-fluid" alt="">
+                     <div class="avatar_cont">
+                        <h6>Mubashshir Nishan</h6>
+                        <p>Owner & Founder</p>
+                     </div>
+                  </div>
+                  <div class="col-6 col-md-4 mt-3">
+                     <img src="img/img_avatar.png" class="img-fluid" alt="">
+                     <div class="avatar_cont">
+                        <h6>Mubashshir Nishan</h6>
+                        <p>Owner & Founder</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+    <!----------=====ABOUT US AREA END==============-------->
+    <!-----======== CONTACT AREA START =================--->
+      <section id="contact_area">
+         <div class="container">
+            <div class="contact_title">
+               <h6>Location & Timing</h6>
+               <h2>Contact With Us</h2>
+            </div>
+            <div class="contact_cardbox">
+               <div class="row">
+                  <div class="col-md-4 mb-3">
+                     <div class="contact_card1">
+                        <div class="card1_map">
+                           <i class="fa-solid fa-map"></i>
+                           <p>Rapmur Nasir Uddin Bhuiyan Bari <br> feni </p>
+                        </div>
+                        <div class="card1_phone">
+                           <i class="fa-solid fa-phone"></i>
+                           <span>013245485802239</span>
+                        </div>
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>mail@.com</span>
+                     </div>
+                  </div>
+                  <div class="col-md-4 mb-3">
+                     <div class="contact_card2">
+                        <p class="card2_head">Houres of service</p>
+                        <div class="card2_middle">
+                           <p>Monday to Saturday</p>
+                           <span>1:00 pm - 3:00 pm and </span> <br>
+                           <span> 7:00 pm - 11:00 pm</span> 
+                        </div>
+                        <div class="card2_footer">
+                           <p>Sunday</p>
+                           <span>12:30 pm - 3:30 pm</span>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-md-4">
+                     <div class="contact_card3">
+                         <h5>Telephone support</h5>
+                         <p>Monday to Saturday from <br>
+                            9:00 am to 9:00 pm
+                         </p>
+                         <img src="img/kisspng-soup.png" alt="" class="img-fluid" />
+                         <div class="card3_btn">
+                            <a href="#" onclick="toggle()">MAKE  A RESERVATION</a>
+                         </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+    <!-----======== CONTACT AREA END =================--->
+    <!--------MAP AREA START----------->
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14689.826509611!2d91.  39517049999999!3d23.00700045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.  1!5e0!3m2!1sen!2sbd!4v1655628897155!5m2!1sen!2sbd" width="100%" height="450" style="border:0;"   allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    <!--------MAP AREA END----------->
+    <!-------====CONTACT FORM AREA START=====--------------->
+      <section class="contact_form">
+         <div class="form_tittle">
+            <h2>Feel free to drop us a line!</h2>
+            <p>Let's talk if you have any query or suggestion. We are open to learn from you. So don't hesitate to reach us anytime.</p>
+         </div>
+         <div class="form_box">
+            <form action="#" method="post">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-md-6">
+                        <div class="form_box1">
+                           <div class="name mb-3">
+                              <input type="name" name="name" placeholder="Your name">
+                           </div>
+                           <div class="subject mb-3">
+                              <input type="text"  name="subject" placeholder="Subject">
+                           </div>
+                           <div class="email2 mb-3">
+                              <input type="email" name="email" placeholder="Your Email">
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-md-6">
+                        <div class="form_box2">
+                           <textarea name="textarea" id="" cols="" rows="6"  placeholder="Type Your Message Here" ></textarea>
+                           <button type="button">Give Us A Shot</button>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </form>
+         </div>
+      </section>
+    <!----=====CONTACT FORM AREA END=============----->
+    <!------======STORY AREA START ===========----------->
+      <section class="story_area">
+         <div class="story_cont owl-carousel">
+            <div class="story_slide">
+               <i class="fa-solid fa-quote-left"></i>
+               <p class="not_bold">Restaurant Pro probably make one of the best pizza in Town. I would definitely post their pizza picture someday. But today I have tasted their another items. So there I have mentioned that</p> 
+               <p class="bold">-Mubashshir</p>
+            </div>
+            <div class="story_slide">
+               <i class="fa-solid fa-quote-left"></i>
+               <p class="not_bold">Restaurant & Cafe, we aim at promoting the foodstuff industry through the branches , we establish and through the new dishes. and integrate between different cultures, by merging different Oriental and its western recipes</p>
+               <p class="bold">-Nishan</p>
+            </div>
+            <div class="story_slide">
+               <i class="fa-solid fa-quote-left"></i>
+               <p class="not_bold">am thrilled with the possibilities that Slick brought to my web design agency. Creating is easier with Slick.</p>
+               <p class="bold">-Nishan</p>
+            </div>
+         </div>
+         <div class="story_img">
+            <img src="img/pizza2.png" alt="" class="img-fluid" width="300px" />
+         </div>
+      </section>
+    <!------======STORY AREA END ===========----------->
+    <!----=====FOOTER AREA START ============----->
+      <section class="footer_area">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-6">
+                  <div class="footer_cont1">
+                     <img src="img/pngfood2.png"  class="pic" alt="" width="100px" />
+                     <div class="cont1_contant">
+                        <img src="img/logo.png" alt="">
+                        <h3>Want To Taste <br> Ore Food</h3>
+                        <button>Order Online</button>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-6">
+                  <div class="footer_cont2">
+                     <div class="cont2_contant1">
+                        <h6>ABOUT</h6>
+                        <a>About</a>
+                        <a>Service</a>
+                        <a>Careers</a>
+                        <a>Hire Us</a>
+                     </div>
+                     <div class="cont2_contant2">
+                        <h6>RESOUCES</h6>
+                        <a>Terms<a>
+                        <a>Help</a>
+                        <a>Privacy</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+    <!----=====FOOTER AREA END ============----->
+    <!--===== CREATE AREA START ==========----->
+      <section class="create_area">
+         <div class="container">
+            <h6>&copy; Copyright By Mubashshir Nishan</h6>
+         </div>
+      </section>
+    <!--===== CREATE AREA END ==========----->
+
+
+    
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.smoothscroll.min.js"></script>
+    <script src="js/material-scrolltop.js"></script>
+    <button class="material-scrolltop" type="button">
+       <i class="fas fa-angle-up"></i>
+    </button>
+         
+    <!-- <script src="js/wow.min.js"></script> -->
+    <script src="js/custome.js"></script>
+    <script>
+      function toggle(){
+         var blur = document.getElementById('blur');
+         blur.classList.toggle('active');
+         var popup = document.getElementById('popup');
+         popup.classList.toggle('active');
+      }
+    </script>
+  </body>
+</html>
